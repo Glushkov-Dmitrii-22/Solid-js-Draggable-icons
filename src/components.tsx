@@ -1,6 +1,3 @@
-import { access, MaybeAccessor } from '@solid-primitives/utils';
-import { Component, For } from 'solid-js';
-
 export const Icons = () => {
   return (
     <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
