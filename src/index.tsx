@@ -42,6 +42,12 @@ const App: Component = () => {
             localStorage.setItem('mouseX', `${JSON.stringify(mouse.x)}`);
             localStorage.setItem('mouseY', `${JSON.stringify(mouse.y)}`);
           }}
+          ontouchstart={() => setLoggedIn(true)}
+          ontouchend={() => {
+            setLoggedIn(false);
+            localStorage.setItem('mouseX', `${JSON.stringify(mouse.x)}`);
+            localStorage.setItem('mouseY', `${JSON.stringify(mouse.y)}`);
+          }}
           style={{
             padding: '0.5rem',
             position: 'absolute',
